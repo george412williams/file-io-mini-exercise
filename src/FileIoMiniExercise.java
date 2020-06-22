@@ -8,15 +8,20 @@ import java.util.List;
 public class FileIoMiniExercise {
     public static void main(String[] args) {
 
-        // TODO: define the path to the instructor-names.txt file
+        // TODOne: define the path to the instructor-names.txt file
+        Path myFile = Paths.get("src","instructor-name.txt");
+        System.out.println(myFile);
 
+        // TODOne: uncomment the following variable declarations
+        List<Instructor> instructors;
+        List<String> names = new ArrayList<>();
 
-        // TODO: uncomment the following variable declarations
-//        List<Instructor> instructors;
-//        List<String> names = new ArrayList<>();
-
-        // TODO: read the contents of the instructor-names.txt file and store the list of strings into the 'names' variable
-
+        // TODOne: read the contents of the instructor-names.txt file and store the list of strings into the 'names' variable
+        names.add("Sophie");
+        names.add("Justin");
+        names.add("Fred");
+        names.add("Trant");
+        names.add("Vivian");
 
         // TODO: assign the 'instructors' variable a list of Instructor objects with names matching the list of strings/names from the text file (the Instructor class has a helpful method for this)
 
