@@ -17,17 +17,21 @@ public class FileIoMiniExercise {
         List<String> names = new ArrayList<>();
 
         // TODOne: read the contents of the instructor-names.txt file and store the list of strings into the 'names' variable
-        names.add("Sophie");
-        names.add("Justin");
-        names.add("Fred");
-        names.add("Trant");
-        names.add("Vivian");
+        try {
+            names = Files.readAllLines(Paths.get("src", "instructor-names.txt"));
+        }catch(IOException e){
+            e.printStackTrace();
+        }
 
         // TODO: assign the 'instructors' variable a list of Instructor objects with names matching the list of strings/names from the text file (the Instructor class has a helpful method for this)
-
+        try {
+            List<String> myInstructors = Files.readAllLines(myFile);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
 
         // TODO: greet all instructors by their names
-
+        //greetInstructors(names, myInstructors);
 
         // TODO: change "Fred" to "David" in the list of Instructor objects
 
