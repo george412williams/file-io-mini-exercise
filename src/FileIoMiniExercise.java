@@ -23,17 +23,17 @@ public class FileIoMiniExercise {
             e.printStackTrace();
         }
 
-        // TODO: assign the 'instructors' variable a list of Instructor objects with names matching the list of strings/names from the text file (the Instructor class has a helpful method for this)
+        // TODOne: assign the 'instructors' variable a list of Instructor objects with names matching the list of strings/names from the text file (the Instructor class has a helpful method for this)
         try {
             List<String> myInstructors = Files.readAllLines(myFile);
         }catch(IOException e){
             e.printStackTrace();
         }
 
-        // TODO: greet all instructors by their names
-        //greetInstructors(names, myInstructors);
+        // TODOne: greet all instructors by their names
 
-        // TODO: change "Fred" to "David" in the list of Instructor objects
+
+        // TODOne: change "Fred" to "David" in the list of Instructor objects
 
 
         // TODO: update the list of strings/names ('names' variable) to the latest names from the Instructor objects (the Instructor class has a helpful method for this)
@@ -41,8 +41,8 @@ public class FileIoMiniExercise {
 
         // TODO: overwrite the instructors-names.txt file with the latest list of names
 
-        // TODO: uncomment the following line
-//        System.out.println("============== after name change...");
+        // TODOne: uncomment the following line
+        System.out.println("============== after name change...");
 
         // TODO: greet instructors again (no need to reread the text file again; just use the existing list of instructors in memory)
 
